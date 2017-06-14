@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Open now"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:clickable="true"
+            android:layout_below="@+id/editText" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Delivery estimate"
+            android:layout_below="@+id/switch1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="20 mins"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/seekBar" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekBar"
+            android:text="90+ mins"
+            android:textSize="12sp" />
+
+    <org.apmem.tools.layouts.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/flowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/editText3"
+        android:gravity="top"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/african"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/cardview_light_background"
+            android:clickable="true"
+            android:text="African"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/arabic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/cardview_light_background"
+            android:clickable="true"
+            android:text="Arabic"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/american"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:text="American"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/cardview_light_background"
+            android:clickable="true"
+            android:text="Breakfast"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Caribbean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:clickable="true"
+            android:text="Caribbean"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/danish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/cardview_light_background"
+            android:clickable="true"
+            android:text="Danish"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/french"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/cardview_light_background"
+            android:clickable="true"
+            android:text="French"
+            android:textSize="16sp" />
+    </org.apmem.tools.layouts.FlowLayout>
+
+    </RelativeLayout>
