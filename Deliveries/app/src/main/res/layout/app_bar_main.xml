@@ -1,34 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimaryDark">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <ToggleButton
+        <ImageButton
             android:id="@+id/toggleLeftDrawer"
-            style="@style/AppTheme.AppBarOverlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:tint="@color/white"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="228dp"/>
+            app:srcCompat="@drawable/ic_menu_black_24dp" />
 
-        <ToggleButton
+        <TextView
+            android:id="@+id/tvTitle"
+            tool:text="sdhfsdhfsdhf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_weight="1" />
+
+        <ImageButton
             android:id="@+id/toggleRightDrawer"
-            style="@style/AppTheme.AppBarOverlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="12dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toStartOf="@+id/toggleLeftDrawer"/>
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_filter_list_black_24dp" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </android.support.v7.widget.Toolbar>
 

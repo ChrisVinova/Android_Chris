@@ -9,12 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nnkti.deliveries.Dish;
-import com.nnkti.deliveries.DishAdapter;
+import com.nnkti.deliveries.MainActivity;
+import com.nnkti.deliveries.adapter.DishAdapter;
 import com.nnkti.deliveries.R;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.nnkti.deliveries.data.DataDummy;
 
 /**
  * Created by nnkti on 6/14/2017.
@@ -32,25 +30,11 @@ public class DeliveriesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.deliveries_fragment,container, false);
-        rvDishes = (RecyclerView) view.findViewById(R.id.rv_dishes);
-        List<Dish> mDish = new ArrayList<>();
-        mDish.add(new Dish("Chicken","America"));
-        mDish.add(new Dish("Spagetti","Italian"));
-        mDish.add(new Dish("Rice","VN"));
-        mDish.add(new Dish("Pho","VN"));
-        mDish.add(new Dish("Banh xeo","VN"));
-        mDish.add(new Dish("Beef steak","Italian"));
-        mDish.add(new Dish("Cappuchino","Italian"));
-        mDish.add(new Dish("Americano","America"));
-        mDish.add(new Dish("Beef steak","Italian"));
-        mDish.add(new Dish("Banh xeo","VN"));
-        mDish.add(new Dish("Beef steak","Italian"));
-        mDish.add(new Dish("Spagetti","Italian"));
-        mDish.add(new Dish("Rice","VN"));
-        mDish.add(new Dish("Pho","VN"));
-        mDish.add(new Dish("Beef steak","Italian"));
 
-        mDishAdapter = new DishAdapter(getContext(), mDish);
+        ((MainActivity) getActivity()).setTitle("Deliveries");
+        rvDishes = (RecyclerView) view.findViewById(R.id.rv_dishes);
+
+        mDishAdapter = new DishAdapter(getContext(), DataDummy.getDish());
         rvDishes.setAdapter(mDishAdapter);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         rvDishes.setLayoutManager(linearLayoutManager);

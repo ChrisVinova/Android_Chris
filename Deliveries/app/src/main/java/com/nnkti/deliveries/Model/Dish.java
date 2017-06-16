@@ -1,4 +1,4 @@
-package com.nnkti.deliveries;
+package com.nnkti.deliveries.Model;
 
 /**
  * Created by nnkti on 6/13/2017.
@@ -7,10 +7,22 @@ package com.nnkti.deliveries;
 public class Dish {
     private String dName;
     private String dOrigin;
-    public Dish(String name, String origin){
+    private String dImage;
+
+    public Dish(String name, String origin,String image){
         dName = name;
         dOrigin = origin;
+        dImage = image;
     }
+    public String getdImage() {
+        return dImage;
+    }
+
+    public void setdImage(String dImage) {
+        this.dImage = dImage;
+    }
+
+
 
     public String getdName() {
         return dName;

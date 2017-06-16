@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvCategoryName"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivDish1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/tvDish1Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2c3e50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/ivDish1"
+                        android:layout_alignStart="@+id/ivDish1"
+                        android:layout_alignEnd="@+id/ivDish1" />
+
+                    <RatingBar
+                        android:id="@+id/rbDish1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_below="@+id/tvDish1Name"
+                        android:layout_alignStart="@+id/tvDish1Name" />
+
+                    <TextView
+                        android:id="@+id/tvDish1Origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2c3e50"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:layout_below="@+id/rbDish1"
+                        android:layout_alignStart="@+id/rbDish1"
+                        android:layout_alignEnd="@+id/rbDish1" />
+                    <TextView
+                        android:id="@+id/tvDish1Score"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#f66a4e"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:layout_below="@+id/tvDish1Name"
+                        android:layout_toEndOf="@+id/rbDish1"
+                        tools:text="sds"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivDish2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/tvDish2Name"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2c3e50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/ivDish2"
+                        android:layout_alignStart="@+id/ivDish2"
+                        android:layout_alignEnd="@+id/ivDish2" />
+
+                    <RatingBar
+                        android:id="@+id/rbDish2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                        android:layout_below="@+id/tvDish2Name" />
+
+                    <TextView
+                        android:id="@+id/tvDish2Origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#2c3e50"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:layout_below="@+id/rbDish2"
+                        android:layout_alignStart="@+id/rbDish2" />
+                    <TextView
+                        android:id="@+id/tvDish2Score"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textColor="#f66a4e"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        tools:text="sds"
+                        android:layout_below="@+id/tvDish2Name"
+                        android:layout_toEndOf="@+id/rbDish2" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
