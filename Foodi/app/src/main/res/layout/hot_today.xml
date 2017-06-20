@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/pbUpdater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvHotToday"
+        android:layout_width="111dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Hot Today"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The most popular place for you each day"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_alignTop="@+id/tvStatus"
+        android:layout_alignStart="@+id/tvHotToday"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1/5"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignBottom="@+id/tvHotToday"
+        android:layout_toEndOf="@+id/textView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDishRecommendation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+</RelativeLayout>
