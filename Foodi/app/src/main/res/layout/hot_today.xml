@@ -14,18 +14,19 @@
 
     <TextView
         android:id="@+id/tvHotToday"
-        android:layout_width="111dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="Hot Today"
-        android:textSize="24sp" />
+        android:text="@string/hot_today"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The most popular place for you each day"
+        android:text="@string/the_most_popular_place_for_you_each_day"
+        android:textSize="12sp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_alignTop="@+id/tvStatus"
         android:layout_alignStart="@+id/tvHotToday"

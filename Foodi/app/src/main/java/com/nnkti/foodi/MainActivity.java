@@ -9,11 +9,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.animation.Animation;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nnkti.foodi.Constant.Constant;
 import com.nnkti.foodi.Fragment.FragmentMagazine;
+import com.nnkti.foodi.Fragment.FragmentProfile;
 import com.nnkti.foodi.Fragment.FragmentSelect;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_profile:
                     editor.putString(Constant.RECENTLY_CLICKED,"Profile");
                     editor.commit();
-
+                    changeFragment(R.id.content, FragmentProfile.newInstance());
                     return true;
             }
             return false;

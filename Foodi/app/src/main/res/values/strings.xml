@@ -4,4 +4,16 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="select">Select</string>
+    <string name="the_most_popular_place_for_you_each_day">The most popular place for you each day</string>
+    <string name="hot_today">Hot Today</string>
+    <string name="coffee">Coffee</string>
+    <string name="categories">Categories</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="quick_fix">Quick fix</string>
+    <string name="wine">Wine</string>
+    <string name="dessert">Dessert</string>
+    <string name="we_hand_picked_some_great_places_for_you">We hand-picked some great places for you</string>
+    <string name="coupons">Coupons</string>
+    <string name="my_orders">My Orders</string>
+    <string name="view_all_orders">View all orders</string>
 </resources>

@@ -14,7 +14,7 @@ import com.nnkti.foodi.R;
  */
 
 public class SplashScreen extends Activity{
-    private static int SPLASH_SCREEN_TIME_OUT = 3000;
+    private static int SPLASH_SCREEN_TIME_OUT = 1500;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
