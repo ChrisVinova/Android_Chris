@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SavingData</string>
+    <string name="save">Save Data</string>
+    <string name="String">Load Data</string>
+    <string name="remove">Remove Data</string>
+    <string name="clone">Clone Data</string>
+    <string name="loadClone">Load Clone</string>
+    <string name="remove_clone">Remove Clone</string>
+</resources>
